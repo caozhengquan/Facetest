@@ -1,0 +1,23 @@
+net: "/home/zq/caffe/face/center_VIPL.prototxt"
+test_iter: 100 
+test_interval: 2000
+
+base_lr: 0.05
+lr_policy: "multistep"
+gamma: 0.2
+
+stepvalue: 10000
+stepvalue: 40000
+stepvalue: 60000
+stepvalue: 100000
+stepvalue: 150000
+stepvalue: 200000
+max_iter: 510000
+
+display: 100
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 5000
+snapshot_prefix: "/home/zq/caffe/face/face_snapshot/face_train_test"
+
+solver_mode: GPU
